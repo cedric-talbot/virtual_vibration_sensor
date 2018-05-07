@@ -1,0 +1,15 @@
+{
+	"module_name" : "vibration_device",
+	"modules" :
+	{
+		"vibration_component" :
+		{
+			"version" : "0.0.1",
+			"products" :
+			{
+				"proxy/vibration_proxy.py" : "proxy_module"
+			},
+			"domain" : "devices"
+		}
+	}
+}
