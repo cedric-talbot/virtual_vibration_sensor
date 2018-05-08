@@ -2,6 +2,8 @@ from iotile.core.hw.hwmanager import HardwareManager
 from iotile.core.hw.reports import IndividualReadingReport, IOTileReading
 
 def stream_vibrations(min_value, max_value) :
+    """ Stream vibration data every second, all between min_value and max_value.
+    """
     with HardwareManager(port='virtual:./vibration_device.py') as hw:
         hw.connect('1')
         con = hw.controller()
